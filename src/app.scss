@@ -1,0 +1,41 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-light-red: 255, 102, 102;
+	--primary-orangey-yellow: 255, 204, 102;
+	--primary-green-teal: 51, 204, 153;
+	--primary-cobalt-blue: 51, 102, 204;
+
+	--gradient-light-slate-blue-background: hsl(252, 100%, 67%);
+	--gradient-light-royal-blue-background: hsl(241, 81%, 54%);
+
+	--gradient-violet-blue-circle: hsla(256, 72%, 46%, 1);
+	--gradient-persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+	--neutral-white: hsl(0, 0%, 100%);
+	--neutral-pale-blue: hsl(221, 100%, 96%);
+	--neutral-light-lavender: hsl(241, 100%, 89%);
+	--neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+	font-family: 'Hanken Grotesk';
+	src: url('$lib/assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype'),
+		url('$lib/assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype'),
+		url('$lib/assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+	font-weight: 500 700 800;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+
+	font-family: 'Hanken Grotesk', sans-serif;
+}
